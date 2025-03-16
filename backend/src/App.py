@@ -3,7 +3,7 @@ from fastapi.exceptions import RequestValidationError
 from starlette.middleware.cors import CORSMiddleware
 
 from backend.src.errors.ValidationError import ValidationError
-from backend.src.routers import RegistrationRouter, OperationRouter, ResetPasswordRouter
+from backend.src.routers import RegistrationRouter, OperationRouter, ResetPasswordRouter, AuthorizationRouter, UserRouter
 
 app = FastAPI()
 
@@ -29,3 +29,5 @@ async def validationExceptionHandler(request: Request, e: RequestValidationError
 app.include_router(RegistrationRouter.router)
 app.include_router(OperationRouter.router)
 app.include_router(ResetPasswordRouter.router)
+app.include_router(AuthorizationRouter.router)
+app.include_router(UserRouter.router)
