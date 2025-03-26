@@ -3,13 +3,13 @@ from datetime import datetime, timedelta
 from jose import jwt
 from sqlalchemy.orm import Session
 
-from backend.src.Constants import REFRESH_TOKEN_LIFETIME, ACCESS_TOKEN_LIFETIME
-from backend.src.Utils import sha512
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.errors.AuthorizationError import InvalidCredential, SessionExpired
-from backend.src.models.AuthorizationModel import TokenResponseModel
-from backend.src.services.SettingsService import SettingsService
-from backend.src.services.UserService import UserService
+from ..Constants import REFRESH_TOKEN_LIFETIME, ACCESS_TOKEN_LIFETIME
+from ..Utils import sha512
+from ..entities.UserEntity import UserEntity
+from ..errors.AuthorizationError import InvalidCredential, SessionExpired
+from ..models.AuthorizationModel import TokenResponseModel
+from ..services.SettingsService import SettingsService
+from ..services.UserService import UserService
 
 
 class AuthorizationService:

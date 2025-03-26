@@ -2,8 +2,8 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from starlette.middleware.cors import CORSMiddleware
 
-from backend.src.errors.ValidationError import ValidationError
-from backend.src.routers import RegistrationRouter, OperationRouter, ResetPasswordRouter, AuthorizationRouter, UserRouter
+from .errors.ValidationError import ValidationError
+from .routers import RegistrationRouter, OperationRouter, ResetPasswordRouter, AuthorizationRouter, UserRouter
 
 app = FastAPI()
 

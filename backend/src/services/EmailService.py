@@ -4,11 +4,11 @@ from email.mime.text import MIMEText
 
 from sqlalchemy.orm import Session
 
-from backend.src.entities.OperationEntity import OperationEntity
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.enums.OperationTypeEnum import OperationTypeEnum
-from backend.src.enums.TemplateEnum import TemplateEnum
-from backend.src.services.SettingsService import SettingsService
+from ..entities.OperationEntity import OperationEntity
+from ..entities.UserEntity import UserEntity
+from ..enums.OperationTypeEnum import OperationTypeEnum
+from ..enums.TemplateEnum import TemplateEnum
+from ..services.SettingsService import SettingsService
 
 
 class EmailService:

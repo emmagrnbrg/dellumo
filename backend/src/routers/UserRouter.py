@@ -3,11 +3,11 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, Body
 from sqlalchemy.orm import Session
 
-from backend.src.Database import getDbSession
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.models.UserModel import UpdatePasswordRequestModel
-from backend.src.routers.AuthorizationRouter import getCurrentActiveUser
-from backend.src.services.UserService import UserService
+from ..Database import getDbSession
+from ..entities.UserEntity import UserEntity
+from ..models.UserModel import UpdatePasswordRequestModel
+from ..routers.AuthorizationRouter import getCurrentActiveUser
+from ..services.UserService import UserService
 
 router = APIRouter(prefix="/user")
 

@@ -2,8 +2,8 @@ from datetime import datetime
 
 from sqlalchemy import Column, Integer, String, Date, Boolean, DateTime
 
-from backend.src.Database import BaseEntity
-from backend.src.Utils import sha512
+from ..Database import BaseEntity
+from ..Utils import sha512
 
 
 class UserEntity(BaseEntity):

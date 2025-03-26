@@ -3,10 +3,10 @@ from typing import Annotated
 from fastapi import APIRouter, Body, Depends
 from sqlalchemy.orm import Session
 
-from backend.src.Database import getDbSession
-from backend.src.models.OperationModel import OperationResponseModel
-from backend.src.models.ResetPasswordModel import PasswordRecoveryRequestModel, ResetPasswordRequestModel
-from backend.src.services.ResetPasswordService import ResetPasswordService
+from ..Database import getDbSession
+from ..models.OperationModel import OperationResponseModel
+from ..models.ResetPasswordModel import PasswordRecoveryRequestModel, ResetPasswordRequestModel
+from ..services.ResetPasswordService import ResetPasswordService
 
 router = APIRouter(prefix="/reset-password")
 

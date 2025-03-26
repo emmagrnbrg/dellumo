@@ -1,11 +1,11 @@
 from sqlalchemy.orm import Session
 
-from backend.src.entities.OperationEntity import OperationEntity
-from backend.src.enums.OperationTypeEnum import OperationTypeEnum
-from backend.src.errors.ResetPasswordError import UserNotFound
-from backend.src.services.EmailService import EmailService
-from backend.src.services.OperationService import OperationService
-from backend.src.services.UserService import UserService
+from ..entities.OperationEntity import OperationEntity
+from ..enums.OperationTypeEnum import OperationTypeEnum
+from ..errors.ResetPasswordError import UserNotFound
+from ..services.EmailService import EmailService
+from ..services.OperationService import OperationService
+from ..services.UserService import UserService
 
 
 class ResetPasswordService:

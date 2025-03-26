@@ -1,6 +1,6 @@
 from fastapi import HTTPException, status
 
-from backend.src.Constants import CODE_LIFE_TIME
+from ..Constants import CODE_LIFE_TIME
 
 
 class OperationNotFound(HTTPException):

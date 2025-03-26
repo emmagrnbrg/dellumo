@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from backend.src.entities.UserEntity import UserEntity
+from ..entities.UserEntity import UserEntity
 
 
 class UserService:

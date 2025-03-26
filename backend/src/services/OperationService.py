@@ -3,13 +3,13 @@ from datetime import datetime, timedelta
 from sqlalchemy import and_
 from sqlalchemy.orm import Session
 
-from backend.src.Constants import CODE_LIFE_TIME, MAX_ATTEMPTS_COUNT
-from backend.src.Utils import generateCode
-from backend.src.entities.OperationEntity import OperationEntity
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.enums.OperationTypeEnum import OperationTypeEnum
-from backend.src.errors.OperationError import OperationNotFound, TooManyAttempts, IncorrectOTP, OTPTimeout
-from backend.src.services.EmailService import EmailService
+from ..Constants import CODE_LIFE_TIME, MAX_ATTEMPTS_COUNT
+from ..Utils import generateCode
+from ..entities.OperationEntity import OperationEntity
+from ..entities.UserEntity import UserEntity
+from ..enums.OperationTypeEnum import OperationTypeEnum
+from ..errors.OperationError import OperationNotFound, TooManyAttempts, IncorrectOTP, OTPTimeout
+from ..services.EmailService import EmailService
 
 
 class OperationService:

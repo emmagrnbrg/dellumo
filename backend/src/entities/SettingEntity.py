@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Enum
 
-from backend.src.Database import BaseEntity
-from backend.src.enums.SettingEnum import SettingEnum
+from ..Database import BaseEntity
+from ..enums.SettingEnum import SettingEnum
 
 
 class SettingEntity(BaseEntity):

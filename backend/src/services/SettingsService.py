@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from backend.src.entities.SettingEntity import SettingEntity
-from backend.src.enums.SettingEnum import SettingEnum
+from ..entities.SettingEntity import SettingEntity
+from ..enums.SettingEnum import SettingEnum
 
 
 class SettingsService:

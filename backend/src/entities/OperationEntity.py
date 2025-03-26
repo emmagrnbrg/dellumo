@@ -4,10 +4,10 @@ from uuid import uuid4
 from sqlalchemy import Column, String, Integer, DateTime, ForeignKey, Enum
 from sqlalchemy.orm import relationship
 
-from backend.src.Database import BaseEntity
-from backend.src.Utils import generateCode, getExpirationTime
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.enums.OperationTypeEnum import OperationTypeEnum
+from ..Database import BaseEntity
+from ..Utils import generateCode, getExpirationTime
+from ..entities.UserEntity import UserEntity
+from ..enums.OperationTypeEnum import OperationTypeEnum
 
 
 class OperationEntity(BaseEntity):

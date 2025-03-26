@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from random import choice
 from hashlib import sha512 as _sha512
 
-from backend.src.Constants import DIGITS, EXPIRATION_MINUTES
+from .Constants import DIGITS, EXPIRATION_MINUTES
 
 
 def sha512(text: str) -> str:

@@ -2,7 +2,7 @@ from typing import Annotated
 
 from pydantic import BaseModel, EmailStr, Field
 
-from backend.src.models.OperationModel import OperationVerifyRequestModel
+from ..models.OperationModel import OperationVerifyRequestModel
 
 
 class PasswordRecoveryRequestModel(BaseModel):

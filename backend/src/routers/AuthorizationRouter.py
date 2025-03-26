@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends, Body
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 
-from backend.src.Database import getDbSession
-from backend.src.entities.UserEntity import UserEntity
-from backend.src.models.AuthorizationModel import TokenResponseModel, RefreshTokenRequestModel
-from backend.src.services.AuthorizationService import AuthorizationService
+from ..Database import getDbSession
+from ..entities.UserEntity import UserEntity
+from ..models.AuthorizationModel import TokenResponseModel, RefreshTokenRequestModel
+from ..services.AuthorizationService import AuthorizationService
 
 router = APIRouter()
 

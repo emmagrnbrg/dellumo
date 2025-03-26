@@ -3,10 +3,10 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, Body
 from sqlalchemy.orm import Session
 
-from backend.src.Database import getDbSession
-from backend.src.models.OperationModel import OperationResponseModel, OperationVerifyRequestModel
-from backend.src.models.RegistrationModel import RegistrationRequestModel
-from backend.src.services.RegistrationService import RegistrationService
+from ..Database import getDbSession
+from ..models.OperationModel import OperationResponseModel, OperationVerifyRequestModel
+from ..models.RegistrationModel import RegistrationRequestModel
+from ..services.RegistrationService import RegistrationService
 
 router = APIRouter(prefix="/registration")
 
